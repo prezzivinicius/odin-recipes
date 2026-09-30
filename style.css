@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte principal do site */
+    background-color: #f5f5f5; /* Define a cor de fundo da página */
+    color: #222; /* Define a cor padrão dos textos */
+    max-width: 800px; /* Limita a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo na tela */
+    padding: 20px; /* Cria espaço interno nas bordas da página */
+}
+
+h1 {
+    text-align: center; /* Centraliza o título principal */
+    color: #8b0000; /* Define a cor do título como vermelho escuro */
+}
+
+img {
+    max-width: 400px; /* Define o tamanho máximo da imagem */
+    width: 100%; /* Faz a imagem se adaptar ao tamanho da tela */
+    height: auto; /* Mantém a proporção original da imagem */
+    display: block; /* Faz a imagem se comportar como bloco */
+    margin: 20px auto; /* Dá espaço em cima/baixo e centraliza a imagem */
+    border-radius: 8px; /* Arredonda os cantos da imagem */
+}
+
+
+p, li {
+    font-size: 18px; /* Define o tamanho do texto dos parágrafos e listas */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+}
+
+a {
+    color: #8b0000; /* Define a cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Deixa os links em negrito */
+}
+
+a:hover {
+    text-decoration: underline; /* Coloca sublinhado quando passa o mouse no link */
+    color: #b22222; /* Muda a cor do link ao passar o mouse */
+}
+
+/*
+Com a criação da class="recipe-list, no index, não vou utilizar essa parte, que foi feita antes da utilização class! 
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+Agora vou utilizar o '.recipe-list'/ o ponto '.' significa que estamos chamando uma classe! 
+*/
+.recipe-list {
+    list-style: none; /*Remove as bolinhas da lista*/
+    padding: 0; /*Remove o espaço padrão da lista*/
+    text-align: center; /*Centraliza os links das receitas*/
+}
+
+.recipe-list li {
+    margin-bottom: 15px;
+
+/*Aplique esse estilo apenas nos li que estão dentro da classe recipe-list
+Ou seja, isso afeta os itens da página inicial, mas não mexe nos ingredientes das receitas*/
+}
+
+.recipe-list a {
+    display: inline-block; /*Faz o link se comportar como um botão*/
+    background-color: #8b0000; /*Define a cor de fundo do botão*/
+    color: white; /*Define a cor do texto do botão*/
+    padding: 12px 20px; /* Cria espaço interno no botão*/
+    border-radius: 8px; /*Arredonda os cantos do botão */
+    width: 220px; /*Define a largura fixa para os botões */
+    transition: 0.3s; /*Deixa a mudança mais suave */
+} 
+
+.recipe-list a:hover {
+    background-color: #b22222; /* Muda a cor de fundo do botão ao passar o mouse */
+    text-decoration: none; /* Evita que o botão fique sublinhado */
+    transform: scale(1.03); /* Aumenta levemente o botão */
+}
+
+h2 {
+    color: #8b0000; /*Define a cor dos subtitulos*/
+    border-bottom: 2px solid #8b0000; /*Cria uma linha abaixo do subtítulo*/
+    padding-bottom: 5px; /*Dá espaço entre o texto e a linha*/
+    margin-top: 30px; /*Cria espaço acima do subtítulo*/
+
+}
+
+.back-link {
+    display: inline-block; /* Faz o link se comportar como botão */
+    margin-bottom: 20px; /* Cria espaço abaixo do botão */
+    background-color: #8b0000; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto */
+    padding: 8px 12px; /* Cria espaço interno no botão */
+    border-radius: 6px; /* Arredonda os cantos */
+    font-size: 16px; /* Define o tamanho da fonte */
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    background-color: #b22222; /* Muda o fundo ao passar o mouse */
+    color: white;
+    text-decoration: none; /* Remove o sublinhado ao passar o mouse */
+    transform: scale(1.01);
+}
+
+.container {
+    background-color: white; /* Cria uma caixa branca para o conteúdo */
+    padding: 30px; /* Cria espaço interno dentro da caixa */
+    border-radius: 12px; /* Arredonda os cantos da caixa */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Cria uma sombra leve */
+}
+
+.intro {
+    text-align: center; /* Centraliza o texto */
+    font-size: 18px; /* Define o tamanho da fonte */
+    color: #555; /* Deixa o texto em cinza */
+    margin-bottom: 30px; /* Cria espaço abaixo do parágrafo */
+}
+
+footer {
+    margin-top: 40px; /* Cria espaço acima do rodapé */
+    text-align: center; /* Centraliza o texto */
+    color: #777; /* Deixa o texto em cinza */
+    font-size: 14px; /* Deixa o texto menor */
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Diminui o espaço nas laterais em telas pequenas */
+    }
+
+    .container {
+        padding: 20px; /* Diminui o espaço interno da caixa */
+    }
+
+    h1 {
+        font-size: 28px; /* Diminui o tamanho do título */
+    }
+
+    .recipe-list a {
+        width: 100%; /* Faz os botões ocuparem a largura disponível */
+        box-sizing: border-box; /* Faz o padding não estourar a largura */
+    }
+
+    img {
+        max-width: 100%; /* Garante que a imagem nunca passe da largura da tela */
+    }
+}
